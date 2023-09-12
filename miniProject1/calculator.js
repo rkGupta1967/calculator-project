@@ -15,3 +15,11 @@ function calculateResult() {
         document.getElementById('display').value = 'Error';
     }
 }
+
+function deleteSingle() {
+    var display = document.getElementById('display');
+    var currentValue = displayValue;
+    displayValue = currentValue.slice(0, -1);
+    document.getElementById('display').value = displayValue;
+
+}
